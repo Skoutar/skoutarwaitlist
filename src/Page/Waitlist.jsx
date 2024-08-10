@@ -9,7 +9,7 @@ const Waitlist = () => {
         setFormVisible(!isFormVisible);
     };
     return (
-        <div className="pb-[100px]">
+        <div className="">
             {/* navbar */}
             <div className="flex items-center justify-between w-[100%] h-[94px] px-[5%] border-[#22222214] shadow-sm ">
                 <img src="images/Navlogo.png" className="Brand" alt="" />
@@ -90,10 +90,68 @@ const Waitlist = () => {
             <div className="flex flex-col items-center justify-center mt-[100px] px-[5%]">
                 <h3 className="w-[800px] h-auto text-[35px] text-center text-[#222222] font-[600]">Enter your email address to secure your spot and get notified when we launch</h3>
                 <div className="mt-[20px] gap-4 flex items-center">
-                    <input type="text" className="w-[546px] pl-[10px] border rounded border-[#6200EE] h-[65px]" placeholder="enter your Email Address" />
-                    <button className="w-[160px] h-[65px]  bg-[#6200EE] hover:bg-[#49237e] text-[16px] font-[500] text-[#FFFFFF] rounded">Join the waitlist</button>
+                    <input type="text" className="w-[300px] pl-[10px] border rounded border-[#6200EE] h-[50px]" placeholder="enter your Email Address" />
+                    <button className="w-[120px] h-[50px]  bg-[#6200EE] hover:bg-[#49237e] text-[14px] font-[500] text-[#FFFFFF] rounded">Join the waitlist</button>
                 </div>
             </div>
+            {/* footer */}
+            <div className="footer-container bg-[#290064] flex flex-col xl:mt-[80px] mt-[200px] items-center justify-center py-16">
+      <div className='footer-sec w-[90%] md:w-11/12 lg:w-[90%] flex flex-wrap justify-between'>
+        <div className='footer-text w-35'>
+          <h4 className="text-white text-2xl font-bold mb-4">Company</h4>
+          <p className="text-white text-base mb-4">About Us</p>
+          <p className="text-white text-base mb-4">Contact Us</p>
+          <p className="text-white text-base mb-4">Services</p>
+          <p className="text-white text-base mb-4">Careers</p>
+          <p className="text-white text-base mb-4">Blog</p>
+          <p className="text-white text-base mb-4">Terms</p>
+          <p className="text-white text-base mb-4">Privacy</p>
+        </div>
+        <div className='footer-text w-35'>
+          <h4 className="text-white text-2xl font-bold mb-4">Support</h4>
+          <p className="text-white text-base mb-4">Help Center</p>
+          <p className="text-white text-base mb-4">FAQ</p>
+          <p className="text-white text-base mb-4">Community</p>
+          <p className="text-white text-base mb-4">Resource Center</p>
+          <p className="text-white text-base mb-4">Trust and Safety</p>
+          <p className="text-white text-base mb-4">Report vulnerability</p>
+        </div>
+        <div className='footer-text w-35'>
+          <h4 className="text-white text-2xl font-bold mb-4">Host</h4>
+          <p className="text-white text-base mb-4">List Your Space</p>
+          <p className="text-white text-base mb-4">Community</p>
+        </div>
+        <div className='footer-text w-35'>
+          <h4 className="text-white text-2xl font-bold mb-4">Countries</h4>
+          <p className="text-white text-base mb-4">Nigeria</p>
+          <p className="text-white w-auto text-base mb-4">South Africa</p>
+          <p className="text-white text-base mb-4">Ghana</p>
+          <p className="text-white text-base mb-4">Mali</p>
+          <p className="text-white text-base mb-4">Ivory Coast</p>
+        </div>
+        <div className='footer-text w-32'>
+          <h4 className="text-white text-2xl font-bold mb-4">Activities</h4>
+          <p className="text-white text-base mb-4">Production</p>
+          <p className="text-white text-base mb-4">Filming</p>
+          <p className="text-white text-base mb-4">Music Videos</p>
+          <p className="text-white text-base mb-4">Photo Shoot</p>
+          <p className="text-white text-base mb-4">Meeting</p>
+          <p className="text-white text-base mb-4">View All</p>
+        </div>
+      </div>
+      <div className="w-[90%] h-[1px] bg-[#F5F5F5] mt-[20px]"></div>
+      <div className='foot-footer w-70 md:w-11/12 lg:w-[90%] mt-[20px] flex items-center justify-between'>
+        <p className='text-white w-3/5 text-base lg:text-lg xl:text-xl'>
+          © 2024 Skouta. Made with ❤️ in Nigeria. All rights reserved
+        </p>
+        <div className='social-icons flex'>
+          <img src="images/fb.png" alt="Facebook" className='footer-icons mr-4' />
+          <img src="images/microsoft.png" alt="Microsoft" className='footer-icons mr-4' />
+          <img src="images/apple.png" alt="Apple" className='footer-icons mr-4' />
+          <img src="images/google.png" alt="Google" className='footer-icons mr-4' />
+        </div>
+      </div>
+    </div>
         </div>
     )
 }
